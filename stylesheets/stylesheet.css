@@ -151,7 +151,17 @@ a.button span {
   height: 23px;
   padding-left: 50px;
 }
-
+.welcom{
+  float: left;
+  height: 25px;
+  margin-left: 100px;
+  padding: 12px 8px 12px 8px;
+}
+.welcom span{
+  display: block;
+  line-height: 25px;
+  height: 25px;
+}
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
 }
