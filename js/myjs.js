@@ -116,7 +116,7 @@
 		return this;
 	};
 	$('.start').click(function(){
-		var mySwiper = new Swiper ('#startwrap', { //*****start按钮
+		var mySwiper = new Swiper ('.swiper-container', { //*****start按钮
 		  onInit: function(swiper){
 		    swiperAnimateCache(swiper); 
 		    swiperAnimate(swiper); 
@@ -134,6 +134,9 @@
 		setTimeout(function(){
 			$('.velas').show();
 		},16000);
+		setTimeout(function(){
+			$('.title').show();
+		},21000);
 		onResize(); //****点击执行canvas
 	})
 });
