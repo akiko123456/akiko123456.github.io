@@ -26,9 +26,9 @@ body{
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 475px;
+  top: 440px;
   left: 50%;
-  margin-left: 250px;
+  margin-left: -5px;
   margin-top: -8.33333333px;
   width: 13px;
   height: 86px;
@@ -38,6 +38,9 @@ body{
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
+  transition: all 1s linear;
+  z-index: 99;
+  opacity: 0;
 }
 .fuego {
   border-radius: 100%;

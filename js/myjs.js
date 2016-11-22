@@ -115,6 +115,7 @@
 			});
 		return this;
 	};
+	var flag=false;
 	$('.start').click(function(){
 		var mySwiper = new Swiper ('.swiper-container', { //*****start按钮
 		  onInit: function(swiper){
@@ -126,17 +127,22 @@
 		  } 
 		})
 		$('#mymusic').get(0).play(); //******音乐控制
-		$('#box').css('visibility','visible');
-		$('#box').onebyone();
-		setTimeout(function(){
-			$('.dangao').show();
-		},6000);
 		setTimeout(function(){
 			$('.velas').show();
-		},16000);
+			$('.velas').css('opacity','1');
+		},2000);
+		setTimeout(function(){
+			$('.birthday .container').css('opacity','1');
+		},4000);
+		setTimeout(function(){
+			$('#box').css('visibility','visible');
+			$('#box').show();
+			$('#box').onebyone();
+			onResize();
+		},8000);
 		setTimeout(function(){
 			$('.title').show();
-		},21000);
-		onResize(); //****点击执行canvas
+			$('.title').css('left','40%');
+		},12000);
 	})
 });
