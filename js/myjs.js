@@ -141,7 +141,7 @@
 			onResize();
 		},8000);
 		setTimeout(function(){
-			$('.title').css('left','400px');
+			$('.title').css('left','0px');
 		},12000);
 	})
 });
